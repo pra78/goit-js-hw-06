@@ -9,5 +9,4 @@ function onInputChange(event) {
     } else {
         nameLabel.textContent = "Anonymous";
     }
-    
 }
