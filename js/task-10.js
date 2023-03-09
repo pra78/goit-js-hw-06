@@ -26,12 +26,15 @@ function createBoxes(amount) {
 
     width += 10;
     height += 10;
+
+    // elem.style.cssText = 'color: red; font-size: 40px;';
   }
 
   return boxes;
 }
 
 function onCreateButtonClick() {
+  destroyBoxes();
   const amount = Number(controls.querySelector('input').value);
   const boxes = createBoxes(amount);
   boxesDiv.append(...boxes);
